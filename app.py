@@ -73,7 +73,9 @@ def run():
             print("MST built. Edges:", len(T.edges()), "Total distance:", int(w))
             draw_graph(T, title=f"MST (Total {int(w)} km)", node_size=60)
         elif choice == "7":
-            draw_graph(G, title="Full City Graph", node_size=200)
+            # Draw full graph and print where the image was saved
+            outpath = draw_graph(G, title="Full City Graph", node_size=200, fname="full_graph.png")
+            print("Graph visual saved to:", outpath)
         elif choice == "8":
             print("Bye!")
             break
