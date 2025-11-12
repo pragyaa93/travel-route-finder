@@ -73,7 +73,7 @@ def run():
             print("MST built. Edges:", len(T.edges()), "Total distance:", int(w))
             draw_graph(T, title=f"MST (Total {int(w)} km)", node_size=60)
         elif choice == "7":
-            draw_graph(G, title="Full City Graph", show_weights=False)
+            draw_graph(G, title="Full City Graph", node_size=200)
         elif choice == "8":
             print("Bye!")
             break
@@ -82,3 +82,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+
